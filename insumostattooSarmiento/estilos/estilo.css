@@ -675,7 +675,7 @@ footer {
  h2{
      text-align: center;
      background-color: black;
-     color: rgb(189, 165, 28);
+     color: #bda51c;
      font-family: monospace; 
      letter-spacing: 10px;
      font-size: 25px;
@@ -688,4 +688,10 @@ footer {
      width: 100%;
      background-color: rgb(97, 96, 96);
      color: white; 
+ }
+ .sec1{
+     background-image: url(../imggrad/gradiente.svg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
  }
