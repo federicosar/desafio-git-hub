@@ -690,8 +690,33 @@ footer {
      color: white; 
  }
  .sec1{
-     background-image: url(../imggrad/gradiente.svg);
+     background-image: url(../imagenes/imghd6.jpg);
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
  }
+ .sec2{
+    background-image: url(../imggrad/poligrilla.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+ .sec3{
+     background-image: url(../imagenes/imghd7.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+ .sec4{
+    background-image: url(../imggrad/gradiente.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.sec5{
+    background-image: url(../imagenes/imghd3.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}  
