@@ -238,7 +238,7 @@ footer {
 
 .item2 {
     grid-area: item2;
-    background-image: url(../imagenes/tintascolor.jpg);
+    background-image: url(../imagenes/imghd6.jpg);
     background-size: cover;
     background-position: center;   
 }
@@ -669,4 +669,23 @@ footer {
      background-size: cover;
      background-position: center;
      background-color: rgba(0, 0, 0, 0.589);
+ }
+
+ /* estilos en contactos */
+ h2{
+     text-align: center;
+     background-color: black;
+     color: rgb(189, 165, 28);
+     font-family: monospace; 
+     letter-spacing: 10px;
+     font-size: 25px;
+     text-transform: uppercase;
+     font-weight: 100;
+
+ }
+ .sec{
+     height: 500px;
+     width: 100%;
+     background-color: rgb(97, 96, 96);
+     color: white; 
  }
