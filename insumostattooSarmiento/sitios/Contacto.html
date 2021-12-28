@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsumosTattoo</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+                <li><a href="./Productos.html">Producto</a></li>
+                <li><a href="./Nosotros.html">Nosotro</a></li>
+                <li><a href="./Imagenes.html">Imagenes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <main class="main_sec_contactos"> 
+
+            <H2>Completar</H2>
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <h4>Datos del Usuario:</h4>
+                <fieldset class="fieleset_tamaño">Preferencias
+                    <legend>Encuesta Opcional</legend>
+                    <h3>Que Producto Prefieres?</h3>
+                    <label for="Opcionescheckbox">Producto 1</label>
+                    <input type="checkbox"> <br>
+                    <label for="Opcionescheckbox">Producto 2</label>
+                    <input type="checkbox"> <br>
+                    <label for="Opcionescheckbox">Producto 3</label>
+                    <input type="checkbox"> <br>
+                    <label for="Opcionescheckbox">Producto 4</label>
+                    <input type="checkbox">
+                </fieldset> <br>
+
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre"> <br>
+                <label for="Apellido">Apellido</label>
+                <input type="text" required> <br>
+                <label for="Mail">Mail:</label>
+                <input type="email" required> <br>
+                <label for="Edad">Edad</label>
+                <input type="number" required> <br>
+                <label for="Nacimiento">Fecha de Nacimiento</label>
+                <input type="date" required> <br>
+                <h4>Genero:</h4>
+                <label for="Genero">Femenino</label>
+                <input type="radio" name="Genero" value="sin especificar"> <br>
+                <label for="Genero">Masculino</label>
+                <input type="radio" name="Genero" value="sin especificar"> <br>
+                <label for="Genero">Otro</label>
+                <input type="radio" name="Genero" value="sin especificar" checked>
+                <br>
+                <br>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Danos tu opinion"></textarea> <br>
+                <label for="Enviar">Enviar</label>
+                <input type="submit" value="Enviar">
+                <label for="Borrar">Borrar</label>
+                <input type="reset" value="Borrar"> <br>
+            </form>
+        </main>
+<footer>
+        Insumos Tattoo
+    </footer>
+
+
+</body>
+
+</html>

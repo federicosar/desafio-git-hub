@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Luxurious+Script&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Luxurious+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* principio del header */
+
+header {
+    background-color: rgb(163, 155, 37);
+    width: 100%;
+    height: 200px;
+
+
+}
+
+.navTamañoFuente {
+    font-size: 40px;
+
+}
+
+header div img {
+    width: 150px;
+
+}
+
+header nav {
+    padding-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+
+header nav ul li {
+    border: 2px solid rgb(202, 190, 84);
+    display: inline-block;
+    position: relative;
+}
+
+ul ul {
+    position: relative;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+ul ul li a {
+    color: white;
+}
+
+ul li:hover ul {
+    position: absolute;
+    display: block;
+    background-color: blue;
+}
+
+
+li :hover {
+    background-color: rgb(15, 13, 109);
+    color: rgb(238, 234, 234);
+}
+
+/* fin del header*/
+
+body {
+    background-color: rgba(255, 235, 205, 0.466);
+
+}
+
+.body__img--size {
+    border: 3px solid black;
+    width: auto;
+    height: auto;
+}
+
+main {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(222, 130, 77, 0.062);
+    background-image: url(../imagenes/imghd3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+span {
+    height: 600px;
+    width: auto;
+
+
+}
+
+main span img {
+
+    height: 450px;
+    width: auto;
+    border: 3px solid black;
+    background-color: rgb(159, 161, 35);
+    display: inline-block;
+
+}
+
+
+table {
+    border: 3px solid rgb(235, 235, 222);
+    width: 100%;
+    height: 5px;
+    background-color: rgb(189, 156, 49);
+}
+
+table td {
+    border: 2px dashed rgb(24, 19, 24);
+}
+
+.td1 {
+    font-family: 'Lobster', cursive;
+
+
+}
+
+.td2 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.td3 {
+    color: brown;
+    font-family: 'Luxurious Script', cursive;
+
+
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: rgb(180, 39, 39);
+
+}
+
+/* imagenes en grids y responsive */
+.imgn1 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.imgn2 {
+    margin-left: 28%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.item {
+    border: 2px solid black;
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "item1 item1 item2 item2"
+        "item1 item1 item3 item4"
+        "item5 item5 item6 item6";
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 200px 50px repeat(3, 200px); 
+    background-color: rgb(119, 118, 34);
+    grid-gap: 10px;
+    margin: 5px;
+
+}
+
+.header1 {
+    grid-area: header;
+    display: flex;
+    background-color: rgb(163, 155, 37);
+    line-height: 60px;
+    align-content: center;
+    background-image: url(../imagenes/paisaje\ amarillo.jpg);
+    background-position: center;
+    background-size:cover;
+    
+
+}
+
+.titulogrid{
+    font-size: 50px;
+    font-style:oblique ;
+    color: rgb(141, 37, 37);
+    margin-left: 35%;
+    
+}
+.sectionnav{
+    grid-area: nav;
+    background-color: rgb(163, 155, 37);
+    
+}
+.navbarra ul {
+    margin-left: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    border: 2px solid black;
+    font-size: 25px;
+    width: 430px;
+    background-color: mintcream;
+    align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+.item1 {
+    grid-area: item1;
+    background-color: chocolate;
+    background-image: url(../imagenes/maq3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    grid-area: item2;
+    background-image: url(../imagenes/tintascolor.jpg);
+    background-size: cover;
+    background-position: center;   
+}
+
+.item3 {
+    grid-area: item3; 
+    background-image: url(../imagenes/maq2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    grid-area: item4;
+    background-image: url(../imagenes/maq4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    grid-area: item5;
+    background-image: url(../imagenes/paisaje.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.item6 {
+    grid-area: item6;
+    background-image: url(../imagenes/paisaje\ verde.jpg);
+    background-size:cover;
+    background-position: center;
+}
+/* media queries desktop max */
+@media only screen and (min-width: 1120px){
+    .imgn1 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .imgn2 {
+        margin-left: 28%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .item {
+        border: 2px solid black;
+    
+    }
+    
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "item1 item1 item2 item2"
+            "item1 item1 item3 item4"
+            "item5 item5 item6 item6";
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: 200px 50px repeat(3, 200px); 
+        background-color: rgb(119, 34, 34);
+        grid-gap: 10px;
+        margin: 5px;
+    
+    }
+    
+    .header1 {
+        grid-area: header;
+        display: flex;
+        background-color: rgb(163, 155, 37);
+        line-height: 60px;
+        align-content: center;
+        background-image: url(../imagenes/paisaje\ amarillo.jpg);
+        background-position: center;
+        background-size:cover;
+        
+    
+    }
+    
+    .titulogrid{
+        font-size: 50px;
+        font-style:oblique ;
+        color: rgb(141, 37, 37);
+        margin-left: 35%;
+        
+    }
+    .sectionnav{
+        grid-area: nav;
+        background-color: rgb(163, 155, 37);
+        
+    }
+    .navbarra ul {
+        margin-left: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        display: flex;
+        border: 2px solid black;
+        font-size: 25px;
+        width: 450px;
+        background-color: mintcream;
+        align-items: center;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    
+    
+    .item1 {
+        grid-area: item1;
+        background-color: chocolate;
+        background-image: url(../imagenes/adaptador\ violeta.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item2 {
+        grid-area: item2;
+        background-image: url(../imagenes/tintascolor.jpg);
+        background-size: cover;
+        background-position: center; 
+        border-radius: 15px;
+    }
+    
+    .item3 {
+        grid-area: item3; 
+        background-image: url(../imagenes/maq2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item4 {
+        grid-area: item4;
+        background-image: url(../imagenes/maq4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    
+    .item5 {
+        grid-area: item5;
+        background-image: url(../imagenes/paisaje.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    .item6 {
+        grid-area: item6;
+        background-image: url(../imagenes/paisaje\ verde.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }   
+}
+/* media queries entre descktop y mobil*/
+@media only screen and (min-width: 705px) and (max-width: 1119px) {
+    .imgn1 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .imgn2 {
+        margin-left: 12%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .item {
+        border: 2px solid black;
+    
+    }
+    
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "item1 item1 item2 item2"
+            "item1 item1 item3 item4"
+            "item5 item5 item6 item6";
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: 200px 50px repeat(3, 200px); 
+        background-color: rgb(119, 34, 34);
+        grid-gap: 10px;
+        margin: 5px;
+    
+    }
+    
+    .header1 {
+        grid-area: header;
+        display: flex;
+        background-color: rgb(163, 155, 37);
+        line-height: 60px;
+        align-content: center;
+        background-image: url(../imagenes/paisaje\ amarillo.jpg);
+        background-position: center;
+        background-size:cover;
+        
+    
+    }
+    
+    .titulogrid{
+        font-size: 50px;
+        font-style:oblique ;
+        color: rgb(141, 37, 37);
+        margin-left: 35%;
+        
+    }
+    .sectionnav{
+        grid-area: nav;
+        background-color: rgb(163, 155, 37);
+        
+    }
+    .navbarra ul {
+        margin-left: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        display: flex;
+        border: 2px solid black;
+        font-size: 25px;
+        width: 450px;
+        background-color: mintcream;
+        align-items: center;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    
+    
+    .item1 {
+        grid-area: item1;
+        background-color: chocolate;
+        background-image: url(../imagenes/adaptador\ violeta.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item2 {
+        grid-area: item2;
+        background-image: url(../imagenes/tintascolor.jpg);
+        background-size: cover;
+        background-position: center; 
+        border-radius: 15px;
+    }
+    
+    .item3 {
+        grid-area: item3; 
+        background-image: url(../imagenes/maq2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item4 {
+        grid-area: item4;
+        background-image: url(../imagenes/maq4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    
+    .item5 {
+        grid-area: item5;
+        background-image: url(../imagenes/paisaje.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    .item6 {
+        grid-area: item6;
+        background-image: url(../imagenes/paisaje\ verde.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }   
+}
+/* media queries mobile */
+@media only screen and (min-width: 400px ){
+    .imgn1 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .imgn2 {
+        margin-left: 12%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    
+    .item {
+        border: 2px solid black;
+    
+    }
+    
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "item1 item1 item2 item2"
+            "item1 item1 item3 item4"
+            "item5 item5 item6 item6";
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: 200px 50px repeat(3, 200px); 
+        background-color: rgb(119, 34, 34);
+        grid-gap: 10px;
+        margin: 5px;
+    
+    }
+    
+    .header1 {
+        grid-area: header;
+        display: flex;
+        background-color: rgb(25, 49, 102);
+        line-height: 60px;
+        align-content: center;
+        background-image: url(../imagenes/paisaje\ amarillo.jpg);
+        background-position: center;
+        background-size:cover;
+        
+    
+    }
+    
+    .titulogrid{
+        font-size: 20px;
+        font-style:oblique ;
+        color: rgb(63, 21, 21);
+        margin-left: 35%;
+        
+    }
+    .sectionnav{
+        grid-area: nav;
+        background-color: rgb(8, 8, 7);
+        
+    }
+    .navbarra ul {
+        margin-left: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        display: flex;
+        border: 2px solid black;
+        font-size: 25px;
+        width: 450px;
+        background-color: mintcream;
+        align-items: center;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    
+    
+    .item1 {
+        grid-area: item1;
+        background-color: chocolate;
+        background-image: url(../imagenes/adaptador\ violeta.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item2 {
+        grid-area: item2;
+        background-image: url(../imagenes/tintascolor.jpg);
+        background-size: cover;
+        background-position: center; 
+        border-radius: 15px;
+    }
+    
+    .item3 {
+        grid-area: item3; 
+        background-image: url(../imagenes/maq2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+    
+    .item4 {
+        grid-area: item4;
+        background-image: url(../imagenes/maq4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    
+    .item5 {
+        grid-area: item5;
+        background-image: url(../imagenes/paisaje.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    }
+    .item6 {
+        grid-area: item6;
+        background-image: url(../imagenes/paisaje\ verde.jpg);
+        background-size:cover;
+        background-position: center;
+        border-radius: 15px;
+
+    } 
+}
+ /* estilos en seccion contacto */
+ .fieleset_tamaño{
+     width: 45%;
+ }
+ .main_sec_contactos{
+     height: auto;
+     background-image: url(../imagenes/imghd1.webp);
+     background-size: cover;
+     background-position: center;
+     background-color: rgba(0, 0, 0, 0.589);
+ }
